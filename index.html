@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Doctor Project</title>
+  <link rel="stylesheet" href="./css/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+</head>
+
+<body>
+  
+  <nav class="navbar">
+    <div class="max-width">
+      <div class="logo"><a href="#">Doc<span>On</span>Tap</a></div>
+      <ul class="menu">
+        <li><a href="#teams" class="menu-btn">Centers</a></li>
+        <li><a href="#doctors" class="menu-btn">Doctors</a></li>
+        <li><a href="#services" class="menu-btn">Services</a></li>
+        <li><a href="#about" class="menu-btn">About us</a></li>
+        <li><a href="./SignUp.html" class="Sign-up-btn">Log In</a></li>
+      </ul>
+      <div class="menu-btn">
+        <i class="fas fa-bars"></i>
+      </div>
+    </div>
+  </nav>
+
+  <section class="locationInput">
+    <div class="city">
+      <select>
+        <option value="Default">Choose Location</option>
+        <option value="Delhi">Delhi</option>
+        <option value="Mumbai">Mumbai</option>
+        <option value="Chennai">Chennai</option>
+        <option value="Kolkata">Kolkata</option>
+        <option value="Bangalore">Bangalore</option>
+      </select>
+    </div>
+    <div class="city speciality">
+      <select>
+        <option value="Default">Choose Speciality</option>
+        <option value="Cardiologist">Cardiologist</option>
+        <option value="Orthologist">Orthologist</option>
+        <option value="General Physician">General Physician</option>
+        <option value="Homeopathy">Homeopathy</option>
+        <option value="Neurologist">Neurologist</option>
+        <option value="Nutritionist">Nutritionist</option>
+        <option value="Orthopadics">Orthopadics</option>
+        <option value="Pathology">Pathology</option>
+        <option value="Pediatretion">Pediatretion</option>
+        <option value="Psychatrist">Psychatrist</option>
+        <option value="Radiology">Radiology</option>
+        <option value="Kidney">Kidney</option>
+        <option value="Immunologist">Immunologist</option>
+      </select>
+    </div>
+    <button class="searchBtn"><i class="fa fa-search"></i></button>
+  </section>
+
+  <section class="teams" id="doctors">
+    <div class="max-width">
+      <h2 class="title">Best Rated Doctors</h2>
+      <div class="carousel owl-carousel" id="cards-container"></div>
+    </div>
+  </section>
+
+  <section class="services" id="services">
+    <div class="max-width">
+      <h2 class="title">Our services</h2>
+      <div class="serv-content">
+        <div class="card">
+          <div class="box">
+            <i class="fa fa-file-medical"></i>
+            <div class="text">Test Centers</div>
+            <p>
+              Ask for a sample collection at home from the best diagnostic centers near your home.
+            </p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="box">
+            <i class="fas fa-user-md"></i>
+            <div class="text">Doctors</div>
+            <p>
+              Book an appointment with the best doctors of  any field
+            </p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="box">
+            <i class="fa fa-ambulance"></i>
+            <div class="text">Ambulance</div>
+            <p>
+              Call for an Ambulance in case of an Emergency.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="teams" id="teams">
+    <div class="max-width">
+      <h2 class="title">Top Test Centers</h2>
+      <div class="carousel owl-carousel" id="centers-container"></div>
+    </div>
+  </section>
+
+  <section class="about" id="about">
+    <div class="max-width">
+      <h2 class="title">About us</h2>
+      <div class="about-content">
+        <div class="column left">
+          <img src="./images/doc1.jpg" alt="" />
+        </div>
+        <div class="column right">
+          <div class="text">
+            We are DocOnTap<span class="typing-2"></span>
+          </div>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi ut
+            voluptatum eveniet doloremque autem excepturi eaque, sit
+            laboriosam voluptatem nisi delectus. Facere explicabo hic minus
+            accusamus alias fuga nihil dolorum quae. Explicabo illo unde, odio
+            consequatur ipsam possimus veritatis, placeat, ab molestiae velit
+            inventore exercitationem consequuntur blanditiis omnis beatae.
+            Dolor iste excepturi ratione soluta quas culpa voluptatum
+            repudiandae harum non.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="newsletter">
+    <div class="parallax">
+      <div class="newtext">
+        <h2>You Can Join Our Daily Newsletter</h2>
+        <p>
+          We share some daily tips so that you can stay fit and stay healthy
+        </p>
+        <div class="newsinput">
+          <input type="text" placeholder="Your Email ID Here" />
+          <button class="btn1" type="submit">Subscribe</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="column1">
+      <div class="logo"><a href="#">Doc<span>On</span>Tap</a></div>
+      <h4>Contact</h4>
+      <p>Email ID: abc@xyz.com</p>
+      <p>Number: +1 2345678</p>
+      <h4>Follow us</h4>
+      <a href="" target="_blank"><i class="fab fa-linkedin"></i></a>
+      <a href="" target="_blank"><i class="fab fa-twitter-square"></i></a>
+      <a href="" target="_blank"><i class="fab fa-github-square"></i></a>
+    </div>
+    <div class="column1">
+      <h4>Company</h4>
+      <ul>
+        <li>Missions</li>
+        <li>Blogs</li>
+        <li>Careers</li>
+        <li>Privacy Policy</li>
+        <li>Terms&Conditions</li>
+      </ul>
+    </div>
+    <div class="column1">
+      <h4>Services</h4>
+      <ul>
+        <li>Doctors</li>
+        <li>Centers</li>
+        <li>Emergency</li>
+        <li>Ambulance</li>
+      </ul>
+    </div>
+    <div class="column1">
+      <h4>My Account</h4>
+      <ul>
+        <li>Signup</li>
+        <li>Login</li>
+        <li>Dashboard</li>
+        <li>Help</li>
+      </ul>
+    </div>
+  </footer>
+
+  <div class="copyright">
+    <p>Copyright 2022 @ All Rights Reserved</p>
+  </div>
+
+  <script src="./js/cards.js"></script>
+  <script src="./js/centerCards.js"></script>
+  <script src="./js/script.js"></script>
+</body>
+
+</html>
