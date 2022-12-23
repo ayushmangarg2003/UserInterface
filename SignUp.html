@@ -1,105 +1,43 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width" />
-    <title>Sign Up</title>
-    <link href="./css/SignUp.css" rel="stylesheet" type="text/css" />
-    <link
-      href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css"
-      rel="stylesheet"
-    />
-  </head>
 
-  <body>
-    <section class="container forms">
-      <div class="form login">
-        <div class="form-content">
-          <header>Login</header>
-          <form action="#">
-            <div class="field input-field">
-              <input type="email" placeholder="Email" class="input" />
-            </div>
-            <div class="field input-field">
-              <input type="password" placeholder="Password" class="password" />
-              <i class="bx bx-hide eye-icon"></i>
-            </div>
-            <div class="form-link">
-              <a href="#" class="forgot-pass">Forgot password?</a>
-            </div>
-            <div class="field button-field">
-              <button>Login</button>
-            </div>
-          </form>
-
-          <div class="form-link">
-            <span
-              >Don't have an account?
-              <a href="#" class="link signup-link">Signup</a></span
-            >
+<head>
+  <meta charset="utf-8" />
+  <title>Login or Sign up</title>
+  <!-- Cool Google Fonts -->
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Bowlby+One+SC&display=swap" rel="stylesheet" />
+  <!-- Our stylesheet -->
+  <link rel="stylesheet" type="text/css" href="./css/SignUp.css" />
+</head>
+<body>
+  <div id="content_container">
+    <div id="form_container">
+      <div id="form_header_container">
+        <h2 id="form_header">Login or Sign up</h2>
+      </div>
+      <div id="form_content_container">
+        <div id="form_content_inner_container">
+          <input type="text" id="full_name" placeholder="Full name" />
+          <input type="email" id="email" placeholder="Email" />
+          <input type="password" id="password" placeholder="Password" />
+          <input type="text" id="Age" placeholder="Age" />
+          <input type="text" id="Location" placeholder="Location" />
+          <div id="button_container">
+          <button onclick="login()">Login</button>
+          <button onclick="register()">Register</button>
           </div>
         </div>
-
-        <div class="line"></div>
-
-        <div class="media-options">
-          <a href="#" class="field facebook">
-            <i class="bx bxl-facebook facebook-icon"></i>
-            <span>Login with Facebook</span>
-          </a>
-        </div>
       </div>
+    </div>
+  </div>
+</body>
+<script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-database.js"></script>
+<script src="./js/SignUp.js"></script>
 
-      <!-- Signup Form -->
-
-      <div class="form signup">
-        <div class="form-content">
-          <header>Signup</header>
-          <form action="#">
-            <div class="field input-field">
-              <input type="email" placeholder="Email" class="input" />
-            </div>
-
-            <div class="field input-field">
-              <input
-                type="password"
-                placeholder="Create password"
-                class="password"
-              />
-            </div>
-
-            <div class="field input-field">
-              <input
-                type="password"
-                placeholder="Confirm password"
-                class="password"
-              />
-              <i class="bx bx-hide eye-icon"></i>
-            </div>
-
-            <div class="field button-field">
-              <button>Signup</button>
-            </div>
-          </form>
-
-          <div class="form-link">
-            <span
-              >Already have an account?
-              <a href="#" class="link login-link">Login</a></span
-            >
-          </div>
-        </div>
-
-        <div class="line"></div>
-
-        <div class="media-options">
-          <a href="#" class="field facebook">
-            <i class="bx bxl-facebook facebook-icon"></i>
-            <span>Login with Facebook</span>
-          </a>
-        </div>
-      </div>
-    </section>
-    <script src="./js/SignUp.js"></script>
-  </body>
 </html>
